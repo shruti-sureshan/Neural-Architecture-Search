@@ -1,3 +1,3 @@
 # AI-Course-Project
 
-Neural Architectural search
+Neural Architectural search (NAS)
