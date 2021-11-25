@@ -1,4 +1,4 @@
-# AI-Course-Project
+# Neural-Architecutre-Search
 
 Neural Architectural search (NAS)
 Code and report
