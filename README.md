@@ -1,4 +1,4 @@
-# Neural-Architecutre-Search
+# Neural-Architecture-Search
 
 Neural Architectural search (NAS)
 Code and report
