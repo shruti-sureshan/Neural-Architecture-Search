@@ -1,0 +1,20 @@
+genome string
+NC 64 1 swish;RC 32 2 relu;RC 32 2 relu;FL relu;
+NC 32 1 swish;RC 32 2 tanh;RC 32 2 tanh;FL relu;
+NC 128 3 tanh;RC 256 3 swish;RC 128 3 gelu;FL relu;
+NC 64 1 swish;RC 64 2 gelu;RC 64 2 gelu;FL relu;
+NC 32 1 sigmoid;RC 64 2 relu;RC 64 2 relu;FL relu;
+RC 10 3 tanh;NC 20 3 relu;RC 10 3 swish;FL swish;
+NC 128 1 sigmoid;RC 128 2 tanh; RC 128 2 tanh;FL relu;
+NC 128 1 sigmoid;RC 128 2 relu;RC 128 2 relu;FL relu;
+NC 64 1 gelu;NC 64 3 gelu;NC 64 1 gelu;RC 128 3 gelu;NC 128 1 gelu;NC 128 3 gelu;NC 128 1 gelu;RC 256 3 gelu;FL relu;
+NC 128 1 gelu;RC 128 2 swish;RC 128 2 swish;FL relu;
+RC 10 3 tanh;NC 20 3 relu;RC 10 3 swish;FL swish;
+NC 32 3 relu;RC 64 3 relu;RC 128 3 relu;FL sigmoid;
+NC 16 3 relu;RC 32 3 tanh;RC 64 3 tanh;FL sigmoid;
+RC 32 3 relu;NC 64 3 sigmoid;RC 128 3 relu;FL sigmoid;
+NC 16 3 relu;RC 32 3 relu;RC 64 3 relu;FL sigmoid;
+RC 16 3 tanh;NC 32 3 relu;RC 64 3 tanh;FL swish;
+RC 10 3 relu;NC 20 3 sigmoid;RC 10 3 relu;FL sigmoid;
+RC 20 3 relu;NC 10 3 tanh;RC 20 3 relu;FL sigmoid;
+NC 32 3 tanh;RC 64 3 gelu;RC 128 3 gelu;FL sigmoid;
