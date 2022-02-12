@@ -52,3 +52,4 @@ With the above, the full genome format is, <br/>
 Here,
 - NC is normal genome and RC is reduction genome. Normal genomes keep the dimensions of the input image intact (i.e. stride=1), while reduction genomes make the output image dimension half of the input dimension.
 - Every genome MUST have EXACTLY 2 RC parts. These RC parts can be placed anywhere in the genome.
+
